@@ -1,2 +1,234 @@
 # Smart-Satellite-Communication-Knowledge-Assistant
 An intelligent assistant that can retrieve knowledge and explain satellite communication concepts in an easy and interactive manner.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Smart Satellite Communication Knowledge Assistant</title>
+
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#081b29;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#07131d;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2ec4ff;
+}
+
+.hero{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:70vh;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:linear-gradient(135deg,#081b29,#0b3553);
+
+}
+
+.hero h1{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    width:700px;
+    max-width:90%;
+    margin:auto;
+    font-size:20px;
+    line-height:35px;
+
+}
+
+.hero button{
+
+    margin-top:35px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    background:#00b4ff;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+}
+
+.hero button:hover{
+
+    background:#0097d4;
+
+}
+
+.chatbot-section{
+
+    padding:80px 8%;
+    text-align:center;
+
+}
+
+.chatbot-section h2{
+
+    font-size:40px;
+    margin-bottom:15px;
+
+}
+
+.chatbot-section p{
+
+    margin-bottom:40px;
+
+}
+
+.topics{
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+}
+
+footer{
+
+    margin-top:60px;
+
+    padding:20px;
+
+    text-align:center;
+
+    background:#07131d;
+
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🚀 Satellite Communication Knowledge Assistant
+        </div>
+
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Orbitron's to the Rescue!</h1>
+
+            <p>
+                Engineers and Students Assemble!.
+            </p>
+
+
+            <p>
+                Ask any SatCom question and have your answers instantly.
+            </p>
+
+            <p>
+                Start dropping the queries in the chat box!
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="chatbot-section">
+
+        <h2>Ask Anything:</h2>
+
+        <ul class="topics">
+
+        <li>Satellite Communication</li>
+        <li>Orbital Mechanics</li>
+        <li>Antenna Design</li>
+        <li>Signal Processing</li>
+        <li>Space Missions</li>
+        <li>MATLAB Codess</li>
+        <li>Research Paper Summarization</li>
+
+        </ul>
+
+<br>
+<br>
+        <h3>
+            Click the blue button at the bottom-most right corner of the page.
+        </h3>
+
+        <script>
+  window.wxOConfiguration = {
+    orchestrationID: "598766df26a64cf5852c4083741ea08a_15f380a0-cceb-42e6-a120-4df5d1ad0c73",
+    hostURL: "https://au-syd.watson-orchestrate.cloud.ibm.com",
+    rootElementID: "root",
+    deploymentPlatform: "ibmcloud",
+    crn: "crn:v1:bluemix:public:watsonx-orchestrate:au-syd:a/598766df26a64cf5852c4083741ea08a:15f380a0-cceb-42e6-a120-4df5d1ad0c73::",
+    chatOptions: {
+        agentId: "1d94254a-22fa-48a0-b4d1-046df9f89741", 
+    }
+  };
+  setTimeout(function () {
+    const script = document.createElement('script');
+    script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+    script.addEventListener('load', function () {
+        wxoLoader.init();
+    });
+    document.head.appendChild(script);
+  }, 0);                     
+        </script>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 AI Knowledge Assistant
+
+    </footer>
+
+</body>
+</html>
